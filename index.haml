@@ -1,0 +1,35 @@
+.container
+ .info
+  %h1 Payment Card
+  %span
+ %form.modal
+  %header.header
+   %h1 Payment of $145.00
+   .card-type
+    %a.card.active{:href => '#'}
+     %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/Amex.png'}
+    %a.card{:href => '#'}
+     %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/Discover.png'}
+    %a.card{:href => '#'}
+     %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/Visa.png'}
+    %a.card{:href => '#'}
+     %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/MC.png'}
+  .content
+   .form
+    .form-row
+     .input-group
+      %label{:for => ''} Name on card
+      %input{:type => 'text', :placeholder => ''}
+    .form-row
+     .input-group
+      %label{:for => ''} Card Number
+      %input{:type => 'number', :maxlength => '16', :placeholder => ''}
+    .form-row
+     .input-group
+      %label{:for => ''} Expiry Date
+      %input{:type => 'month', :placeholder => ''}
+     .input-group
+      %label{:for => ''} CVS
+      %input{:type => 'number', :maxlenght => '4', :placeholder => ''}
+  %footer.footer
+   %button.button Complete Payment
